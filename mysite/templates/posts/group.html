@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+  <head>
+      <title> {{ title }}</title>
+      <a class="navbar-brand" href="{% url 'posts:group' %}">
+          Анфиса для друзей
+      </a>
+  </head>
+  <body>
+    <h1>{{ text }}</h1>
+
+  </body>
+{% endblock %}
+<html lang="ru">
+  <head>
+  </head>
+  <body>
+    <header>
+      {% include 'includes/header.html' %}
+    </header>
+    <main>
+      Список мороженого быть тут должен
+    </main>
+    <footer>
+      {% include 'includes/footer.html' %}
+    </footer>
+  </body>
+</html>
